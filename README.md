@@ -65,6 +65,28 @@ ng g c navBar
 ```
 
 ```
+* Pour le script : 
 ```
+echo 'Enter the href name:'
+read theHref
 
+ng deploy --base-href="$theHref"
+
+git add .
+
+echo 'Enter the commit message:'
+read commitMessage
+
+git commit -m "$commitMessage"
+
+echo 'Enter the name of the branch:'
+read branch
+
+git push origin $branch
+
+read
+
+
+./script.sh
+chmod +x script.sh 
 ```
