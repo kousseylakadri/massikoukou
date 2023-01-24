@@ -10,12 +10,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { ServiceComponent } from './service/service.component';
 import { RouterModule } from '@angular/router';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import {MatCardModule} from '@angular/material/card';
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
     HomeComponent,
-    ServiceComponent
+    ServiceComponent,
+    AboutUsComponent,
+    
+    SignUpComponent
   ],
   imports: [
     BrowserModule,
@@ -24,6 +32,9 @@ import { RouterModule } from '@angular/router';
     MatIconModule,
     MatButtonModule,
     AppRoutingModule,
+    MatDialogModule,
+    MatButtonToggleModule,
+    MatCardModule,
     RouterModule
   ],
   providers: [],
